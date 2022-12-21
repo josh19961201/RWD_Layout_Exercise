@@ -1,0 +1,53 @@
+// 顏色
+$menu: #29293a;
+$primary: #f648b1;
+$secondary: #8430a1;
+$btnhover: #107ef5;
+$texthover: #999ee9;
+$adorn: #4854ed;
+*,
+::after,
+::before,
+:hover {
+  box-sizing: border-box;
+}
+// menu
+#menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $menu;
+  color: white;
+  height: 56px;
+  width: 100%;
+  // padding: 0 20px;
+  > * {
+    height: 100%;
+    margin: 0 20px;
+  }
+  input {
+    display: none;
+  }
+  label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  #logo {
+    flex-grow: 1;
+    a {
+      display: inline-flex;
+      align-items: center;
+      height: 100%;
+    }
+    img {
+      height: 70%;
+    }
+  }
+  #search {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+}
