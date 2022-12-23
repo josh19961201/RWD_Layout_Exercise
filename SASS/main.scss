@@ -5,6 +5,11 @@ $secondary: #8430a1;
 $btnhover: #107ef5;
 $texthover: #999ee9;
 $adorn: #4854ed;
+$bgg: #f5f6fa;
+
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *,
 ::after,
 ::before,
@@ -13,6 +18,9 @@ $adorn: #4854ed;
 }
 body {
   overflow-x: hidden;
+  &:not(i) {
+    font-family: 'Roboto', sans-serif;
+  }
 }
 // menu
 #menu {
@@ -26,7 +34,7 @@ body {
   // padding: 0 20px;
   > * {
     height: 100%;
-    margin: 0 20px;
+    margin: 0 15px;
   }
   input {
     display: none;
@@ -75,12 +83,16 @@ body {
 
   h3 {
     font-size: 0.8rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.15rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
   }
   h1 {
     font-size: 1.8rem;
     margin-bottom: 2rem;
     line-height: 1.5;
+    font-weight: 900;
   }
   button {
     width: 195px;
@@ -88,6 +100,22 @@ body {
     background: linear-gradient(to right, $btnhover, $primary, $secondary);
     border: none;
     color: white;
+    font-size: 1rem;
     cursor: pointer;
+    &:hover {
+      background: $btnhover;
+      transition: 0.3s;
+    }
+  }
+}
+
+// What we offer
+#offer {
+  background: $bgg;
+  text-align: center;
+  padding: 3rem 0;
+  color: $menu;
+  h2 {
+    padding: 3rem 0;
   }
 }
