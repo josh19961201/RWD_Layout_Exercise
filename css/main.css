@@ -363,11 +363,11 @@ body:not(i) {
 #about a {
   color: #f648b1;
   text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 #about a:hover {
   color: white;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 #about i {
   font-size: 3rem;
@@ -534,4 +534,115 @@ body:not(i) {
   background: #107ef5;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+#portfolio {
+  background: #f5f6fa;
+  text-align: center;
+  padding: 3rem 0;
+  color: #29293a;
+}
+#portfolio, #portfolio * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#portfolio h2 {
+  margin: 3rem 0 6rem;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+#portfolio h2 span {
+  position: relative;
+}
+#portfolio h2 span::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 26px;
+  background: #beb6eb;
+  top: -130%;
+  left: 62%;
+  -webkit-transform: translateX(-50%) rotate(-146deg);
+          transform: translateX(-50%) rotate(-146deg);
+}
+#portfolio h2 span::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 26px;
+  background: #beb6eb;
+  top: 125%;
+  left: 38%;
+  -webkit-transform: translateX(-50%) rotate(-146deg);
+          transform: translateX(-50%) rotate(-146deg);
+}
+#portfolio .row {
+  width: 80%;
+}
+#portfolio .col,
+#portfolio iframe {
+  width: 100%;
+}
+
+#testimonials {
+  background: url("../images/testimonialsBg.jpg");
+  color: white;
+  text-align: center;
+  padding: 3rem 0;
+}
+#testimonials, #testimonials * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#testimonials h2 {
+  margin: 3rem 0 6rem;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+#testimonials h2 span {
+  position: relative;
+}
+#testimonials h2 span::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 26px;
+  background: #beb6eb;
+  top: -130%;
+  left: 62%;
+  -webkit-transform: translateX(-50%) rotate(-146deg);
+          transform: translateX(-50%) rotate(-146deg);
+}
+#testimonials h2 span::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 26px;
+  background: #beb6eb;
+  top: 125%;
+  left: 38%;
+  -webkit-transform: translateX(-50%) rotate(-146deg);
+          transform: translateX(-50%) rotate(-146deg);
 }

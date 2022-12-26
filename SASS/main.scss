@@ -309,9 +309,9 @@ body {
   a {
     color: $primary;
     text-decoration: none;
+    transition: 0.5s;
     &:hover {
       color: white;
-      transition: 0.5s;
     }
   }
   i {
@@ -464,6 +464,100 @@ body {
     &:hover {
       background: $btnhover;
       transition: 0.3s;
+    }
+  }
+}
+
+// Our Portfolio
+#portfolio {
+  background: $bgg;
+  text-align: center;
+  padding: 3rem 0;
+  color: $menu;
+  &,
+  & * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h2 {
+    margin: 3rem 0 6rem;
+    font-size: 1.6rem;
+    font-weight: 900;
+    span {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 26px;
+        background: $line;
+        top: -130%;
+        left: 62%;
+        transform: translateX(-50%) rotate(-146deg);
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 26px;
+        background: $line;
+        top: 125%;
+        left: 38%;
+        transform: translateX(-50%) rotate(-146deg);
+      }
+    }
+  }
+  .row {
+    width: 80%;
+  }
+  .col,
+  iframe {
+    width: 100%;
+  }
+}
+
+// Testimonials
+#testimonials {
+  background: url('../images/testimonialsBg.jpg');
+  color: white;
+  text-align: center;
+  padding: 3rem 0;
+  &,
+  & * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h2 {
+    margin: 3rem 0 6rem;
+    font-size: 1.6rem;
+    font-weight: 900;
+    span {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 26px;
+        background: $line;
+        top: -130%;
+        left: 62%;
+        transform: translateX(-50%) rotate(-146deg);
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 26px;
+        background: $line;
+        top: 125%;
+        left: 38%;
+        transform: translateX(-50%) rotate(-146deg);
+      }
     }
   }
 }
