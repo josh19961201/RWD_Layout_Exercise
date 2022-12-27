@@ -13,6 +13,10 @@ window.addEventListener('scroll', function () {
 // Swiper
 const swiper = new Swiper('.swiper', {
   // Optional parameters
+  // effect: 'fade',
+  // fadeEffect: {
+  //   crossFade: true
+  // },
   direction: 'horizontal',
   loop: true,
 
