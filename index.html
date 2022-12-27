@@ -18,6 +18,12 @@
       crossorigin="anonymous"
     />
 
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
     <!-- 自訂樣式 -->
     <link rel="stylesheet" href="./css/main.css" />
   </head>
@@ -232,6 +238,7 @@
             <iframe
               src="https://open.spotify.com/embed/track/5aFGo8wHEntVxFI8IF7Wuj?utm_source=generator&theme=0"
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              height="200"
               loading="lazy"
             ></iframe>
           </div>
@@ -240,6 +247,7 @@
             <iframe
               src="https://open.spotify.com/embed/track/3DQVgcqaP3iSMbaKsd57l5?utm_source=generator&theme=0"
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              height="200"
               loading="lazy"
             ></iframe>
           </div>
@@ -249,6 +257,7 @@
               src="https://open.spotify.com/embed/track/2ThdB23G9Rgf1ExndFGEEg?utm_source=generator&theme=0"
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
               loading="lazy"
+              height="200"
             ></iframe>
           </div>
 
@@ -256,6 +265,7 @@
             <iframe
               src="https://open.spotify.com/embed/track/2hK67eTuNLPcrzYqB4BjZO?utm_source=generator&theme=0"
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              height="200"
               loading="lazy"
             ></iframe>
           </div>
@@ -268,11 +278,100 @@
       <div id="testimonials">
         <h2><span>TESTIMONIALS</span></h2>
         <div class="carousel">
-          <!-- 這裡要放輪播圖 -->
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="swiper-pagination-slide">
+                  <img src="./images/testimonials1.jpg" />
+                </div>
+                <div class="swiper-pagination-slide">
+                  <h3>Kelly McMillan</h3>
+                  <h4>Regular Client</h4>
+                  <i class="fa-solid fa-quote-left"></i>
+                  <p>
+                    As a long time Nashville Songwriter I spend most of my life
+                    in sound studios. None, in my experience, do a better job
+                    than TopSound, and none have better ‘ears’ watching over
+                    things than their team.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-pagination-slide">
+                  <img src="./images/testimonials2.jpg" />
+                </div>
+                <div class="swiper-pagination-slide">
+                  <h3>Harold Barnett</h3>
+                  <h4>Regular Client</h4>
+                  <i class="fa-solid fa-quote-left"></i>
+                  <p>
+                    The team of TopSound really works to get the best sound
+                    possible! This has been true with tracks recorded at this
+                    studio and with projects already recorded, which I have
+                    brought here.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-pagination-slide">
+                  <img src="./images/testimonials3.jpg" />
+                </div>
+                <div class="swiper-pagination-slide">
+                  <h3>Albert Webb</h3>
+                  <h4>Regular Client</h4>
+                  <i class="fa-solid fa-quote-left"></i>
+                  <p>
+                    TopSound is a wonderful place to make and record music. Jean
+                    Thompson is a consummate recording professional and brings a
+                    lovely artistic sensibility to all she touches.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-pagination-slide">
+                  <img src="./images/testimonials4.jpg" />
+                </div>
+                <div class="swiper-pagination-slide">
+                  <h3>Samantha Lee</h3>
+                  <h4>Regular Client</h4>
+                  <i class="fa-solid fa-quote-left"></i>
+                  <p>
+                    From the moment you step into TopSound Studio, you know that
+                    you are in a special place. I can’t imagine ever coming out
+                    of here without an outstanding result, which they always
+                    deliver.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-pagination-slide">
+                  <img src="./images/testimonials5.jpg" />
+                </div>
+                <div class="swiper-pagination-slide">
+                  <h3>Bill Warner</h3>
+                  <h4>Regular Client</h4>
+                  <i class="fa-solid fa-quote-left"></i>
+                  <p>
+                    TopSound always gets it done right. Nathan has great gear
+                    and he knows how to use it. All the isolation rooms have
+                    great sight-lines. This is something a lot of studios
+                    overlook and it is so important.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </div>
       </div>
     </div>
-
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

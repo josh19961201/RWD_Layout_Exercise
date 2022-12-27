@@ -173,6 +173,7 @@ body:not(i) {
           background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.4rem;
+  line-height: 2;
 }
 #offer .col:hover {
   -webkit-transition: 1s;
@@ -600,8 +601,9 @@ body:not(i) {
   color: white;
   text-align: center;
   padding: 3rem 0;
+  width: 100%;
 }
-#testimonials, #testimonials * {
+#testimonials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -645,4 +647,20 @@ body:not(i) {
   left: 38%;
   -webkit-transform: translateX(-50%) rotate(-146deg);
           transform: translateX(-50%) rotate(-146deg);
+}
+#testimonials .carousel {
+  width: 80%;
+}
+#testimonials img {
+  border-radius: 50%;
+}
+#testimonials .swiper-button-prev,
+#testimonials .swiper-button-next {
+  color: #4854ed;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+#testimonials .swiper-button-prev:hover,
+#testimonials .swiper-button-next:hover {
+  color: white;
 }

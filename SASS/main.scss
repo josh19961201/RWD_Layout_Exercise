@@ -147,6 +147,7 @@ body {
       background-clip: text;
       -webkit-text-fill-color: transparent;
       font-size: 1.4rem;
+      line-height: 2;
     }
     &:hover {
       transition: 1s;
@@ -525,8 +526,9 @@ body {
   color: white;
   text-align: center;
   padding: 3rem 0;
-  &,
-  & * {
+  width: 100%;
+
+  & {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -558,6 +560,20 @@ body {
         left: 38%;
         transform: translateX(-50%) rotate(-146deg);
       }
+    }
+  }
+  .carousel {
+    width: 80%;
+  }
+  img {
+    border-radius: 50%;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: $adorn;
+    transition: 0.2s;
+    &:hover {
+      color: white;
     }
   }
 }
