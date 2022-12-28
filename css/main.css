@@ -654,13 +654,3 @@ body:not(i) {
 #testimonials img {
   border-radius: 50%;
 }
-#testimonials .swiper-button-prev,
-#testimonials .swiper-button-next {
-  color: #4854ed;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-#testimonials .swiper-button-prev:hover,
-#testimonials .swiper-button-next:hover {
-  color: white;
-}

@@ -568,12 +568,4 @@ body {
   img {
     border-radius: 50%;
   }
-  .swiper-button-prev,
-  .swiper-button-next {
-    color: $adorn;
-    transition: 0.2s;
-    &:hover {
-      color: white;
-    }
-  }
 }

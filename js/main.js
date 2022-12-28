@@ -2,6 +2,7 @@ const banner = document.querySelector('#banner')
 const about = document.querySelector('#about')
 const testimonials = document.querySelector('#testimonials')
 
+// 視差背景
 window.addEventListener('scroll', function () {
   const scrollTop = window.pageYOffset
   const speed = 0.3
@@ -10,34 +11,31 @@ window.addEventListener('scroll', function () {
   testimonials.style.backgroundPosition = `0% ${scrollTop * speed}px`
 })
 
-// Swiper
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  // effect: 'fade',
-  // fadeEffect: {
-  //   crossFade: true
-  // },
-  direction: 'horizontal',
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination'
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar'
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-    clickable: true
-  }
+// slick
+$(document).ready(function () {
+  $('.carousel').slick({
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  })
 })
