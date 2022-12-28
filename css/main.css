@@ -654,3 +654,11 @@ body:not(i) {
 #testimonials img {
   border-radius: 50%;
 }
+#testimonials #carousel1 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}

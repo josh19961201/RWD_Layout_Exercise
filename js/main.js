@@ -13,29 +13,27 @@ window.addEventListener('scroll', function () {
 
 // slick
 $(document).ready(function () {
-  $('.carousel').slick({
+  $('#carousel1').slick({
     centerMode: true,
-    centerPadding: '60px',
-    slidesToShow: 3,
+    arrows: true,
+    slidesToShow: 2,
+    centerPadding: 0,
+    dot: false,
+    asNavFor: '#carousel2',
     responsive: [
       {
         breakpoint: 768,
         settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
+          centerMode: false,
           slidesToShow: 1
         }
       }
     ]
+  })
+  $('#carousel2').slick({
+    fade: true,
+    dot: false,
+    arrows: false,
+    asNavFor: '#carousel1'
   })
 })
