@@ -12,28 +12,30 @@ window.addEventListener('scroll', function () {
 })
 
 // slick
-$(document).ready(function () {
-  $('#carousel1').slick({
-    centerMode: true,
-    arrows: true,
-    slidesToShow: 2,
-    centerPadding: 0,
-    dot: false,
-    asNavFor: '#carousel2',
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          centerMode: false,
-          slidesToShow: 1
-        }
+
+$('#carousel1').slick({
+  // 大圖
+  focusOnSelect: true, // 點擊切換
+  slidesToShow: 3,
+  infinite: true,
+  // variableWidth: true,
+  // centerMode: true,
+
+  responsive: [
+    {
+      // 小圖
+      breakpoint: 768,
+      settings: {
+        centerMode: false,
+        variableWidth: false,
+        slidesToShow: 1
       }
-    ]
-  })
-  $('#carousel2').slick({
-    fade: true,
-    dot: false,
-    arrows: false,
-    asNavFor: '#carousel1'
-  })
+    }
+  ],
+  asNavFor: '#carousel2'
+})
+$('#carousel2').slick({
+  fade: true,
+  arrows: false,
+  asNavFor: '#carousel1'
 })
