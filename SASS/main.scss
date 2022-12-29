@@ -11,7 +11,7 @@ $line: #beb6eb;
 
 // google fonts
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
 *,
 ::after,
 ::before,
@@ -563,6 +563,25 @@ body {
   }
   .carousel {
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .slick-prev::before,
+  .slick-next::before {
+    font-family: 'Nanum Gothic';
+    color: $adorn;
+    font-size: 2rem;
+    font-weight: 700;
+    &:hover {
+      color: white;
+    }
+  }
+  .slick-prev::before {
+    content: '<';
+  }
+  .slick-next::before {
+    content: '>';
   }
 
   #carousel1 {
@@ -572,10 +591,42 @@ body {
       display: flex;
       justify-content: center;
     }
-  }
-  img {
-    border-radius: 50%;
+    width: 100%;
+    @media (min-width: 768px) {
+      width: 570px;
+
+      .slick-track {
+        display: flex;
+        justify-content: center;
+        padding-right: 240px;
+      }
+      .slick-slide {
+        width: 114px;
+      }
+    }
+    img {
+      border-radius: 50%;
+    }
   }
   #carousel2 {
+    width: 100%;
+    & * :not(i) {
+      margin-bottom: 1.5rem;
+      font-weight: normal;
+    }
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    color: $text;
+  }
+  i {
+    font-size: 3rem;
+    color: $primary;
+    margin-bottom: 1.5rem;
+  }
+  p {
+    font-size: 1.1rem;
   }
 }

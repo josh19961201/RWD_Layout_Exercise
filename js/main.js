@@ -14,16 +14,14 @@ window.addEventListener('scroll', function () {
 // slick
 
 $('#carousel1').slick({
-  // 大圖
-  focusOnSelect: true, // 點擊切換
-  slidesToShow: 3,
+  // 寬
+  // focusOnSelect: true, // 點擊切換
   infinite: true,
-  // variableWidth: true,
-  // centerMode: true,
-
+  variableWidth: true,
+  centerMode: true,
   responsive: [
     {
-      // 小圖
+      // 窄
       breakpoint: 768,
       settings: {
         centerMode: false,
