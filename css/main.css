@@ -123,11 +123,11 @@ body:not(i) {
   color: white;
   font-size: 1rem;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 #banner button:hover {
   background: #107ef5;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 #offer {
@@ -530,12 +530,12 @@ body:not(i) {
   border: none;
   color: white;
   font-size: 1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   cursor: pointer;
 }
 #team button:hover {
   background: #107ef5;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 #portfolio {
@@ -667,10 +667,6 @@ body:not(i) {
   font-size: 2rem;
   font-weight: 700;
 }
-#testimonials .slick-prev::before:hover,
-#testimonials .slick-next::before:hover {
-  color: white;
-}
 #testimonials .slick-prev::before {
   content: "<";
 }
@@ -680,8 +676,9 @@ body:not(i) {
 #testimonials #carousel1 {
   margin-bottom: 3rem;
   width: 100%;
+  height: 96px;
 }
-#testimonials #carousel1 * {
+#testimonials #carousel1 * :not(.slick-track) {
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -690,25 +687,39 @@ body:not(i) {
       -ms-flex-pack: center;
           justify-content: center;
 }
+#testimonials #carousel1 img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 94px;
+  border-radius: 50%;
+  cursor: pointer;
+}
 @media (min-width: 768px) {
   #testimonials #carousel1 {
-    width: 570px;
+    width: 470px;
   }
-  #testimonials #carousel1 .slick-track {
+  #testimonials #carousel1 .slick-slide {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-right: 240px;
+    width: 94px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
-  #testimonials #carousel1 .slick-slide {
-    width: 114px;
+  #testimonials #carousel1 .slick-slide:not(.slick-center) {
+    margin-top: 16px;
   }
-}
-#testimonials #carousel1 img {
-  border-radius: 50%;
+  #testimonials #carousel1 img {
+    width: 63px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  #testimonials #carousel1 .slick-center img {
+    width: 94px;
+  }
 }
 #testimonials #carousel2 {
   width: 100%;
@@ -730,4 +741,50 @@ body:not(i) {
 }
 #testimonials p {
   font-size: 1.1rem;
+}
+
+.tracks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: #29293a;
+  color: white;
+  font-size: 1.8rem;
+  padding: 1.5rem 0;
+  line-height: 1.2;
+}
+.tracks * {
+  margin: 1.2rem;
+}
+.tracks h2 {
+  font-weight: bold;
+}
+.tracks span {
+  font-weight: 300;
+}
+.tracks button {
+  width: 160px;
+  height: 55px;
+  background: -webkit-gradient(linear, left top, right top, from(#107ef5), color-stop(#f648b1), to(#8430a1));
+  background: linear-gradient(to right, #107ef5, #f648b1, #8430a1);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.tracks button:hover {
+  background: #107ef5;
 }

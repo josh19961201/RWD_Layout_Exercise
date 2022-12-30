@@ -15,7 +15,7 @@ window.addEventListener('scroll', function () {
 
 $('#carousel1').slick({
   // 寬
-  // focusOnSelect: true, // 點擊切換
+  focusOnSelect: true, // 點擊切換
   infinite: true,
   variableWidth: true,
   centerMode: true,
@@ -37,3 +37,5 @@ $('#carousel2').slick({
   arrows: false,
   asNavFor: '#carousel1'
 })
+
+$('#carousel1').slick('slickGoTo', 0)
