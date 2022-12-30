@@ -590,6 +590,7 @@ body {
   text-align: center;
   padding: 3rem 0;
   color: $menu;
+  width: 100%;
 
   &,
   & * {
@@ -597,16 +598,39 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-weight: normal;
+    text-decoration: none;
   }
+  h4 a {
+    font-weight: bold;
+  }
+
   h2 {
     @include h2-base();
   }
+
   .big {
-    background: url(../images/blogBg.jpg);
+    border-radius: 3%;
+    position: relative;
+    width: 420px;
+    height: 300px;
+    background: url(../images/blogBg.jpg) center/cover;
+
+    @media (max-width: 420px) {
+      height: calc(300px * (100vw / 420px));
+    }
+    align-items: start;
+    justify-content: end;
+    padding: 1.5rem;
+    & * {
+      color: $text;
+      display: inline-block;
+    }
+    h4 a {
+      color: white;
+    }
   }
-  .row {
-    // flex-direction: row;
-  }
+
   .info {
   }
 }
