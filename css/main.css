@@ -277,7 +277,7 @@ body:not(i) {
   color: #74757f;
 }
 #service h2 {
-  margin: 3rem 0;
+  margin: 3rem 0 6rem;
   font-size: 1.6rem;
   font-weight: 900;
 }
@@ -423,7 +423,7 @@ body:not(i) {
   background-color: rgba(72, 84, 237, 0.4666666667);
 }
 #team h2 {
-  margin: 5rem 0;
+  margin: 3rem 0 6rem;
   font-size: 1.6rem;
   font-weight: 900;
 }
@@ -743,7 +743,7 @@ body:not(i) {
   font-size: 1.1rem;
 }
 
-.tracks {
+#tracks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -764,16 +764,16 @@ body:not(i) {
   padding: 1.5rem 0;
   line-height: 1.2;
 }
-.tracks * {
+#tracks * {
   margin: 1.2rem;
 }
-.tracks h2 {
+#tracks h2 {
   font-weight: bold;
 }
-.tracks span {
+#tracks span {
   font-weight: 300;
 }
-.tracks button {
+#tracks button {
   width: 160px;
   height: 55px;
   background: -webkit-gradient(linear, left top, right top, from(#107ef5), color-stop(#f648b1), to(#8430a1));
@@ -785,6 +785,61 @@ body:not(i) {
   transition: 0.3s;
   cursor: pointer;
 }
-.tracks button:hover {
+#tracks button:hover {
   background: #107ef5;
+}
+
+#blog {
+  background: #f5f6fa;
+  text-align: center;
+  padding: 3rem 0;
+  color: #29293a;
+}
+#blog, #blog * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#blog h2 {
+  margin: 3rem 0 6rem;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+#blog h2 span {
+  position: relative;
+}
+#blog h2 span::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 26px;
+  background: #beb6eb;
+  top: -130%;
+  left: 62%;
+  -webkit-transform: translateX(-50%) rotate(-146deg);
+          transform: translateX(-50%) rotate(-146deg);
+}
+#blog h2 span::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 26px;
+  background: #beb6eb;
+  top: 125%;
+  left: 38%;
+  -webkit-transform: translateX(-50%) rotate(-146deg);
+          transform: translateX(-50%) rotate(-146deg);
+}
+#blog .big {
+  background: url(../images/blogBg.jpg);
 }
