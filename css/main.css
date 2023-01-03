@@ -849,16 +849,18 @@ body:not(i) {
 #blog .big {
   border-radius: 3%;
   position: relative;
-  width: 420px;
+  width: 80%;
+  max-width: 420px;
   height: 300px;
-  background: url(../images/blogBg.jpg) center/cover;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../images/blogBg.jpg) center/cover;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/blogBg.jpg) center/cover;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  padding: 1.5rem;
+  padding: 0 1.5rem;
 }
 @media (max-width: 420px) {
   #blog .big {
@@ -868,7 +870,108 @@ body:not(i) {
 #blog .big * {
   color: #74757f;
   display: inline-block;
+  margin-bottom: 1rem;
+}
+#blog .big span a {
+  border-left: #74757f solid 1px;
+  border-right: #74757f solid 1px;
+  padding: 0 1rem;
+  margin: 0 1rem;
 }
 #blog .big h4 a {
   color: white;
+  font-size: 1.2rem;
+}
+#blog .info {
+  width: 80%;
+  max-width: 420px;
+  margin: 3rem 0;
+}
+#blog .info .col {
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0.5rem 0;
+}
+#blog .info .left {
+  color: white;
+  border-radius: 10%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100px;
+          flex: 0 0 100px;
+  height: 100px;
+  background: #aeb1be;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+#blog .info .left span:nth-child(1) {
+  font-size: 2rem;
+}
+#blog .info:hover .left {
+  background: #4854ed;
+}
+#blog .info .right {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 1rem;
+}
+#blog .info .right * {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  justify-self: start;
+  text-align: left;
+  font-weight: normal;
+  line-height: 2;
+  color: #29293a;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+#blog .info .right span {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-right: 1rem;
+}
+#blog .info .right span a:hover {
+  color: #4854ed;
+}
+#blog .info .right h4 a {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #4854ed;
+}
+#blog .info .right h4 a:hover {
+  color: #f648b1;
+}
+#blog .info button {
+  width: 160px;
+  height: 55px;
+  background: -webkit-gradient(linear, left top, right top, from(#107ef5), color-stop(#f648b1), to(#8430a1));
+  background: linear-gradient(to right, #107ef5, #f648b1, #8430a1);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  margin: 1rem;
+}
+#blog .info button:hover {
+  background: #107ef5;
+}
+
+#logoCaro {
+  background: white;
 }

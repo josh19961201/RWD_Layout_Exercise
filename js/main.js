@@ -39,3 +39,11 @@ $('#carousel2').slick({
 })
 
 $('#carousel1').slick('slickGoTo', 0)
+
+$('#carousel3').slick({
+  dots: true,
+  infinite: false,
+  slidesToShow: 2,
+  slidesToScroll: 2,
+  mobileFirst: true
+})
