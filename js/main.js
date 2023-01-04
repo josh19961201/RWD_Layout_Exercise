@@ -45,5 +45,23 @@ $('#carousel3').slick({
   infinite: false,
   slidesToShow: 2,
   slidesToScroll: 2,
-  mobileFirst: true
+  mobileFirst: true,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        dots: false
+      }
+    }
+  ]
 })
