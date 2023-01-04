@@ -13,8 +13,11 @@ $line: #beb6eb;
   margin: 3rem 0 6rem;
   font-size: 1.6rem;
   font-weight: 900;
+  padding: 0;
   span {
     position: relative;
+    padding: 0;
+
     &::before {
       content: '';
       position: absolute;
@@ -720,7 +723,7 @@ body {
 // logoCaro
 #logoCaro {
   background: white;
-  padding: 2rem 0;
+  padding: 3rem 0;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -745,5 +748,93 @@ body {
   .slick-active ::before {
     font-size: 1rem;
     color: $adorn;
+  }
+}
+
+// contact
+#contact {
+  width: 100%;
+  background: $bgg;
+  flex-direction: column-reverse;
+  &,
+  & * {
+    display: flex;
+    color: $text;
+    text-decoration: none;
+  }
+
+  .map,
+  iframe {
+    width: 100%;
+  }
+  .info {
+    padding: 3rem 5rem;
+
+    h2 {
+      @include h2-base();
+      margin: 3rem 0;
+      span {
+        color: $menu;
+      }
+    }
+    span {
+      i {
+        color: $adorn;
+        line-height: 1.5;
+      }
+      a {
+        padding: 0.3rem;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        transition: 0.3s;
+        &:hover {
+          color: $adorn;
+        }
+      }
+    }
+
+    flex-direction: column;
+  }
+  .social {
+    div {
+      justify-content: center;
+      align-items: center;
+      background: none;
+      border-radius: 50%;
+      margin: 0.1rem;
+      width: 2.3rem;
+      height: 2.3rem;
+      transition: 0.5s;
+      i {
+        color: $text;
+      }
+
+      @each $color,
+        $i in (#0064e0: 1, #2a9bce: 2, #dd2d64: 3, #d54c3f: 4, #0a66c2: 5)
+      {
+        &:nth-of-type(#{$i}) {
+          &:hover {
+            background: $color;
+            i {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    &:hover {
+      div {
+        cursor: pointer;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    flex-direction: row;
+    .map {
+      width: 50%;
+    }
+    .info {
+      width: 50%;
+    }
   }
 }

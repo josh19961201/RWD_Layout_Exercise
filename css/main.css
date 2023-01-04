@@ -201,9 +201,11 @@ body:not(i) {
   margin: 3rem 0 6rem;
   font-size: 1.6rem;
   font-weight: 900;
+  padding: 0;
 }
 #offer h2 span {
   position: relative;
+  padding: 0;
 }
 #offer h2 span::before {
   content: "";
@@ -280,9 +282,11 @@ body:not(i) {
   margin: 3rem 0 6rem;
   font-size: 1.6rem;
   font-weight: 900;
+  padding: 0;
 }
 #service h2 span {
   position: relative;
+  padding: 0;
 }
 #service h2 span::before {
   content: "";
@@ -426,9 +430,11 @@ body:not(i) {
   margin: 3rem 0 6rem;
   font-size: 1.6rem;
   font-weight: 900;
+  padding: 0;
 }
 #team h2 span {
   position: relative;
+  padding: 0;
 }
 #team h2 span::before {
   content: "";
@@ -563,9 +569,11 @@ body:not(i) {
   margin: 3rem 0 6rem;
   font-size: 1.6rem;
   font-weight: 900;
+  padding: 0;
 }
 #portfolio h2 span {
   position: relative;
+  padding: 0;
 }
 #portfolio h2 span::before {
   content: "";
@@ -621,9 +629,11 @@ body:not(i) {
   margin: 3rem 0 6rem;
   font-size: 1.6rem;
   font-weight: 900;
+  padding: 0;
 }
 #testimonials h2 span {
   position: relative;
+  padding: 0;
 }
 #testimonials h2 span::before {
   content: "";
@@ -820,9 +830,11 @@ body:not(i) {
   margin: 3rem 0 6rem;
   font-size: 1.6rem;
   font-weight: 900;
+  padding: 0;
 }
 #blog h2 span {
   position: relative;
+  padding: 0;
 }
 #blog h2 span::before {
   content: "";
@@ -974,7 +986,7 @@ body:not(i) {
 
 #logoCaro {
   background: white;
-  padding: 2rem 0;
+  padding: 3rem 0;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1009,4 +1021,146 @@ body:not(i) {
 #logoCaro .slick-active ::before {
   font-size: 1rem;
   color: #4854ed;
+}
+
+#contact {
+  width: 100%;
+  background: #f5f6fa;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+#contact, #contact * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #74757f;
+  text-decoration: none;
+}
+#contact .map,
+#contact iframe {
+  width: 100%;
+}
+#contact .info {
+  padding: 3rem 5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#contact .info h2 {
+  margin: 3rem 0 6rem;
+  font-size: 1.6rem;
+  font-weight: 900;
+  padding: 0;
+  margin: 3rem 0;
+}
+#contact .info h2 span {
+  position: relative;
+  padding: 0;
+}
+#contact .info h2 span::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 26px;
+  background: #beb6eb;
+  top: -130%;
+  left: 62%;
+  -webkit-transform: translateX(-50%) rotate(-146deg);
+          transform: translateX(-50%) rotate(-146deg);
+}
+#contact .info h2 span::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 26px;
+  background: #beb6eb;
+  top: 125%;
+  left: 38%;
+  -webkit-transform: translateX(-50%) rotate(-146deg);
+          transform: translateX(-50%) rotate(-146deg);
+}
+#contact .info h2 span {
+  color: #29293a;
+}
+#contact .info span i {
+  color: #4854ed;
+  line-height: 1.5;
+}
+#contact .info span a {
+  padding: 0.3rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+#contact .info span a:hover {
+  color: #4854ed;
+}
+#contact .social div {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+  border-radius: 50%;
+  margin: 0.1rem;
+  width: 2.3rem;
+  height: 2.3rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+#contact .social div i {
+  color: #74757f;
+}
+#contact .social div:nth-of-type(1):hover {
+  background: #0064e0;
+}
+#contact .social div:nth-of-type(1):hover i {
+  color: white;
+}
+#contact .social div:nth-of-type(2):hover {
+  background: #2a9bce;
+}
+#contact .social div:nth-of-type(2):hover i {
+  color: white;
+}
+#contact .social div:nth-of-type(3):hover {
+  background: #dd2d64;
+}
+#contact .social div:nth-of-type(3):hover i {
+  color: white;
+}
+#contact .social div:nth-of-type(4):hover {
+  background: #d54c3f;
+}
+#contact .social div:nth-of-type(4):hover i {
+  color: white;
+}
+#contact .social div:nth-of-type(5):hover {
+  background: #0a66c2;
+}
+#contact .social div:nth-of-type(5):hover i {
+  color: white;
+}
+#contact .social:hover div {
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  #contact {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #contact .map {
+    width: 50%;
+  }
+  #contact .info {
+    width: 50%;
+  }
 }
