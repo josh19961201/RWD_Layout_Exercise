@@ -65,3 +65,13 @@ $('#carousel3').slick({
     }
   ]
 })
+
+const screenWidth = $(window).width()
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 0 && screenWidth > 1180) {
+    $('#menu').css({ background: '#29293a', height: '66px' })
+  }
+  if ($(this).scrollTop() < 1 && screenWidth > 1180) {
+    $('#menu').css({ background: 'none', height: '155px' })
+  }
+})
