@@ -116,7 +116,7 @@ body:not(i) {
   width: 100vw;
   height: 60vh;
   color: #fff;
-  background: url("../images/banner.jpg");
+  background: url("../images/banner.jpg") center/cover;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,6 +165,33 @@ body:not(i) {
   #banner {
     height: 80vh;
   }
+  #banner .content {
+    position: relative;
+  }
+  #banner .content::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 60px;
+    display: block;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    height: 80px;
+    width: 320px;
+  }
+  #banner .content::after {
+    content: "";
+    position: absolute;
+    top: 230px;
+    left: 60px;
+    display: block;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    height: 80px;
+    width: 320px;
+  }
   #banner h3 {
     font-size: 1rem;
   }
@@ -175,6 +202,33 @@ body:not(i) {
 @media (min-width: 992px) {
   #banner {
     height: 100vh;
+  }
+  #banner .content {
+    position: relative;
+  }
+  #banner .content::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 60px;
+    display: block;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    height: 80px;
+    width: 320px;
+  }
+  #banner .content::after {
+    content: "";
+    position: absolute;
+    top: 230px;
+    left: 60px;
+    display: block;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    height: 80px;
+    width: 320px;
   }
   #banner h1 {
     font-size: 5rem;

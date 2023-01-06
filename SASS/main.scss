@@ -139,7 +139,7 @@ body {
   width: 100vw;
   height: 60vh;
   color: #fff;
-  background: url('../images/banner.jpg');
+  background: url('../images/banner.jpg') center/cover;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -175,6 +175,33 @@ body {
   }
   @media (min-width: 768px) {
     height: 80vh;
+    .content {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        top: -100px;
+        left: 60px;
+        display: block;
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        height: 80px;
+        width: 320px;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 230px;
+        left: 60px;
+        display: block;
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        height: 80px;
+        width: 320px;
+      }
+    }
     h3 {
       font-size: 1rem;
     }
@@ -184,6 +211,33 @@ body {
   }
   @media (min-width: 992px) {
     height: 100vh;
+    .content {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        top: -100px;
+        left: 60px;
+        display: block;
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        height: 80px;
+        width: 320px;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 230px;
+        left: 60px;
+        display: block;
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        height: 80px;
+        width: 320px;
+      }
+    }
     h1 {
       font-size: 5rem;
     }
