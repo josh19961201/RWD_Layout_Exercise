@@ -12,7 +12,6 @@ window.addEventListener('scroll', function () {
 })
 
 // slick
-
 $('#carousel1').slick({
   // 寬
   focusOnSelect: true, // 點擊切換
@@ -66,12 +65,27 @@ $('#carousel3').slick({
   ]
 })
 
-const screenWidth = $(window).width()
+let screenWidth
+
+const menuJudge = () => {
+  screenWidth = $(window).width()
+  if (screenWidth < 1180) {
+    $('#menu').css({ background: '#29293a', height: '56px' })
+  } else {
+    if ($(window).scrollTop() > 0) {
+      $('#menu').css({ background: '#29293a', height: '66px' })
+    } else if ($(window).scrollTop() < 1) {
+      $('#menu').css({ background: 'none', height: '155px' })
+    }
+  }
+}
+
+$('.big').css('height', ($('.big').width() * 5) / 7)
+$(window).resize(function () {
+  menuJudge()
+  $('.big').css('height', ($('.big').width() * 5) / 7)
+})
+
 $(window).scroll(function () {
-  if ($(this).scrollTop() > 0 && screenWidth > 1180) {
-    $('#menu').css({ background: '#29293a', height: '66px' })
-  }
-  if ($(this).scrollTop() < 1 && screenWidth > 1180) {
-    $('#menu').css({ background: 'none', height: '155px' })
-  }
+  menuJudge()
 })
